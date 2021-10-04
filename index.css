@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Avenir-Roman, sans-serif;
+    font-size: 16px;
+}
+
+#navbar{
+    background-color:#040714;
+    padding:10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#login-btn{
+    padding:10px;
+    background:#090b13;
+    color:#f9f9f9;
+    border:1px solid #f3f3f3;
+    border-radius:4px 4px 4px 4px;
+    cursor:pointer;
+}
+
+#landing-page-body{
+    text-align: center;
+    background:url("./assets/images/login-background.jpg");
+    background-repeat: no-repeat;
+    background-origin:border-box;
+    height:100vh;
+    padding-top:32vh;
+}
+#landing-page-content-body{
+    color:#f9f9f9;
+      margin: auto;
+      width: 50%;
+}
+#landing-page-content-body button{
+    margin:10px 0;
+    padding:20px 10px;
+    width:100%;
+    background:#0063e5;
+    color:#f9f9f9;
+    outline:none;
+    border:none;
+    border-radius:4px 4px 4px 4px;
+    cursor:pointer;
+}
+
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disney plus clone</title>
+</head>
+
+<body>
+    <nav id="navbar">
+       <a href="./index.html"> <img src="./assets/images/logo.svg" height="50px" style="cursor:pointer;"/></a>
+        <button id="login-btn">LOGIN</button>
+    </nav>
+   
+<div id="main-body">
+
+<div id="slider">
+<img class="mySlides fade" src="./assets/images/slider-1.jpg"/>
+<img class="mySlides fade" src="./assets/images/scale6.jpg"/>
+<img class="mySlides fade" src="./assets/images/badging5.jpg"/>
+<img class="mySlides fade" src="./assets/images/slider-4.jpg"/>
+</div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<div id="brands">
+<img src="./assets/images/scale17.jpg"/>
+<img src="./assets/images/scale10.jpg"/>
+<img src="./assets/images/scale7.jpg"/>
+<img src="./assets/images/scale2.jpg"/>
+<img src="./assets/images/scale8.jpg"/>
+</div>
+
+<div id="container">
+<div class="section">
+<h3>Recommended For You</h3>
+<div class="section-body">
+<img src="./assets/images/scale11.jpg"/>
+<img src="./assets/images/scale3.jpg"/>
+<img src="./assets/images/scale12.jpg"/>
+<img src="./assets/images/scale.jpg"/>
+</div>
+</div>
+
+<div class="section">
+<h3>New to Disney + </h3>
+<div class="section-body">
+<img src="./assets/images/scale9.jpg"/>
+<img src="./assets/images/scale15.jpg"/>
+<img src="./assets/images/badging3.jpg"/>
+<img src="./assets/images/scale13.jpg"/>
+</div>
+</div>
+
+<div class="section">
+<h3>Originals</h3>
+<div class="section-body">
+<img src="./assets/images/badging2.jpg"/>
+<img src="./assets/images/badging.jpg"/>
+<img src="./assets/images/badging7.jpg"/>
+<img src="./assets/images/badging6.jpg"/>
+</div>
+</div>
+
+<div class="section">
+<h3>Trending</h3>
+<div class="section-body">
+<img src="./assets/images/scale5.jpg"/>
+<img src="./assets/images/scale18.jpg"/>
+<img src="./assets/images/scale4.jpg"/>
+<img src="./assets/images/scale14.jpg"/>
+</div>
+</div>
+</div>
+</div>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+    var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+
+</html>
