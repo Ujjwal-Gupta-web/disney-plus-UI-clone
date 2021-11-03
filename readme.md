@@ -15,9 +15,7 @@
 
 # Mobile view walkthrough
 
-<video width="320" height="240" controls>
-  <source src="./readme_assets/mobile.mp4" type="video/mp4">
-</video>
+./readme_assets/mobile.mp4
 
 
 
