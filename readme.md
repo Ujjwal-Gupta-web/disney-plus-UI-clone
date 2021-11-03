@@ -12,11 +12,13 @@
 
 <img src="./readme_assets/4.png" height="100%" width="100%">
 
+
 # Mobile view walkthrough
 
-<iframe width="420" height="315"
-src="./readme_assets/mobile.mp4">
-</iframe>
+<video width="320" height="240" controls>
+  <source src="./readme_assets/mobile.mp4" type="video/mp4">
+</video>
+
 
 
 
